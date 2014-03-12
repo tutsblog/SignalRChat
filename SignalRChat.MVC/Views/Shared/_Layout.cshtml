@@ -37,6 +37,9 @@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/signalr")
+    <!--cannot add the below script to the bundle =(-->
+    <script src="~/signalr/hubs"></script>
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
